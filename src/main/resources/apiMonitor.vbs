@@ -1,7 +1,7 @@
 Set objExcel = CreateObject("Excel.Application")
 objExcel.Visible = True
 
-Set objWorkbook = objExcel.Workbooks.Open("C:\Users\AC70068\eclipse-workspace\SBA\ApiMonitor\src\main\resources\apiChart.xlsx")
+Set objWorkbook = objExcel.Workbooks.Open("c:/jenkins/workspace/CERT_Sanity_SOATest/portCleanUpJob2/src/main/resources/apiChart.xlsx")
 Set objWorksheet = objWorkbook.Worksheets(1)
 
 ' Assume that the data is in range A1:B10
@@ -22,7 +22,7 @@ With objChart
 End With
 
 ' Export the chart as an image.
-objChart.Export "C:\Users\AC70068\eclipse-workspace\SBA\ApiMonitor\src\main\resources\ApiMonitorImage.jpg"
+objChart.Export "c:/jenkins/workspace/CERT_Sanity_SOATest/portCleanUpJob2/src/main/resources/ApiMonitorImage.jpg"
 
 Application.DisplayAlerts = False
 ThisWorkbook.Save
