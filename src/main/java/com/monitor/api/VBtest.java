@@ -7,7 +7,7 @@ import java.io.InputStreamReader;
 public class VBtest {
 
 	public static void main(String[] args) {
-		
+		System.out.println("This is user directory");
 		 System.out.println(System.getProperty("user.dir"));
 
 		   try {
