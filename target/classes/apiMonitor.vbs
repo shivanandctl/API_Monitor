@@ -1,6 +1,12 @@
 Set objExcel = CreateObject("Excel.Application")
 objExcel.Visible = True
 
+WScript.Echo "Hello"
+WScript.StdOut.Write "Hello"
+WScript.StdOut.WriteLine "Hello"
+Stdout.WriteLine "Hello"
+Stdout.Write "Hello"
+
 Set objWorkbook = objExcel.Workbooks.Open("c:/jenkins/workspace/CERT_Sanity_SOATest/portCleanUpJob2/src/main/resources/apiChart.xlsx")
 Set objWorksheet = objWorkbook.Worksheets(1)
 
